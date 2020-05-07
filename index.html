@@ -6,12 +6,12 @@
 </head>
 
 <body style="text-align: left;">
-<h1>Singing Demos for "XiaoiceSing: A High-Quality and Integrated Singing Voice Synthesis System"</h1>
+<h1>Singing Demos for "High-Quality and Efficient Singing Voice Synthesis based on Modified Fastspeech"</h1>
 
-<h4 style='display:inline'>Authors: </h4> <p style='display:inline'>Peiling Lu, Jie Wu, Jian Luan, Xu Tan, Li Zhou</p>
+<h4 style='display:inline'>Authors: </h4> <p style='display:inline'>Peiling Lu, Jie Wu, Jian Luan</p>
 <br>
 <br>
-<h4 style='display:inline'>Abstract: </h4> <p style='display:inline'>This paper presents XiaoiceSing, a high-quality singing voice synthesis system which employs an integrated network for spectrum, F0 and duration modeling. We follow the main architecture of FastSpeech while proposing some singing-specific design: 1) Besides phoneme ID and position encoding, features from musical score (e.g.note pitch and length) are also added. 2) To attenuate off-key issues, we add a residual connection in F0 prediction. 3) In addition to the duration loss of each phoneme, the duration of all the phonemes in a musical note is accumulated to calculate the syllable duration loss for rhythm enhancement. Experiment results show that XiaoiceSing outperforms the baseline system of convolutional neural networks by 1.44 MOS on sound quality, 1.18 on pronunciation accuracy and 1.38 on naturalness respectively. In two A/B tests, the proposed F0 and duration modeling methods achieve 97.3\% and 84.3\% preference rate over baseline respectively, which demonstrates the overwhelming advantages of XiaoiceSing.</p>
+<h4 style='display:inline'>Abstract: </h4> <p style='display:inline'>This paper presents a singing voice synthesis system based on modified Fastspeech with high quality and efficiency. Fastspeech network is adopted to predict acoustic features from musical score information in parallel. Considering the speciality of singing, we add a residual connection to model F0 more accurately. Besides, the duration loss of every musical note is taken into account during model training for rhythm enhancement. Final results indicate that its MOS gains over baseline reach 1.30 on sound quality, 1.21 on pronunciation accuracy and 1.43 on naturalness respectively. In A/B tests, new F0 modeling achieves 90.4% preference while new duration predictor achieves 87.3% preference, which reveal overwhelming advantages. On the other hand, the inference efficiency of the proposed network is also outstanding.</p>
 
 
 <hr>
@@ -24,8 +24,8 @@
   <tbody>
     <tr>
       <th width="22%" style="text-align: center" scope="col">Recording</th>
-      <th width="26%" style="text-align: center" scope="col">Baseline</th>
-      <th width="26%" style="text-align: center" scope="col">XiaoiceSing</th>
+      <th width="26%" style="text-align: center" scope="col">FFN</th>
+      <th width="26%" style="text-align: center" scope="col">MFS</th>
     </tr>
 	
     <tr>
